@@ -1,66 +1,52 @@
+import { useScroll, useTransform, motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { devProjects, designProjects, ProjectProps } from "./projectDetails";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const ProjectGrid = () => {
-  // const [filter, setFilter] = useState(true);
+  const [xValue, setXValue] = useState(["30%", "-32%"]);
+  const targetRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setXValue(["35%", "-35%"]);
+      } else {
+        setXValue(["30%", "-55%"]);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const x = useTransform(scrollYProgress, [0, 1], xValue);
 
   return (
-    <>
-      {/* <div className="mb-10 flex gap-16 text-[#e4ded7] md:mb-16  lg:mb-20 ">
-        <h4
-          className={`text-[16px] md:text-[20px] lg:text-[24px] ${
-            filter ? "text-[#e4ded7]" : "text-[#e4ded7]/30"
-          }`}
-          onClick={() => setFilter(true)}
-        >
-          Development
-        </h4>{" "}
-        <h4
-          className={`text-[16px] md:text-[20px] lg:text-[24px] ${
-            filter ? "text-[#e4ded7]/30" : "text-[#e4ded7]"
-          }`}
-          onClick={() => setFilter(false)}
-        >
-          Design
-        </h4>
-      </div> */}
-
-      {/* {filter ? ( */}
-        <div className="grid w-[90%] grid-cols-1 grid-rows-2 gap-y-10 gap-x-6 lg:max-w-[1200px] lg:grid-cols-1">
+    <section
+      ref={targetRef}
+      style={{ width: "calc(100vw - 50px)" }}
+      className="relative h-[500vh]"
+    >
+      <div className="sticky top-0 flex h-screen items-center justify-center overflow-hidden">
+        <motion.div style={{ x }} className="flex w-[250%] gap-8 px-8">
           {devProjects.map((project: ProjectProps) => (
-            <ProjectCard
-              id={project.id}
+            <div
               key={project.id}
-              name={project.name}
-              description={project.description}
-              technologies={project.technologies}
-              github={project.github}
-              demo={project.demo}
-              image={project.image}
-              available={project.available}
-            />
+              className="w-[85vw] flex-shrink-0 md:w-[1000px]"
+            >
+              <ProjectCard {...project} />
+            </div>
           ))}
-        </div>
-      {/* ) : (
-        <div className="grid w-[90%] grid-cols-1 grid-rows-2 gap-y-6 gap-x-6 lg:max-w-[1200px] lg:grid-cols-1">
-          {designProjects.map((project: ProjectProps) => (
-            <ProjectCard
-              id={project.id}
-              key={project.id}
-              name={project.name}
-              description={project.description}
-              technologies={project.technologies}
-              github={project.github}
-              demo={project.demo}
-              image={project.image}
-              bgColor={project.bgColor}
-              available={project.available}
-            />
-          ))}
-        </div>
-      )} */}
-    </>
+        </motion.div>
+      </div>
+    </section>
   );
 };
 

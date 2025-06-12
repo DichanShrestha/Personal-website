@@ -4,7 +4,9 @@ import { monaSans } from "../fonts/monaSans";
 import { motion } from "framer-motion";
 import { imageAnimation, bodyAnimation } from "../animations/animations";
 import AnimatedWords from "../animations/AnimatedWords";
-import profile from "../../public/profile.webp";
+import profile from "../../public/me.jpg";
+import { Github, Linkedin } from "lucide-react";
+import * as FaIcons from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -34,7 +36,7 @@ const Hero = () => {
 
         <div className="flex gap-10 text-[#e4ded7] sm:gap-12 md:gap-14 lg:gap-14">
           <Link
-            href="https://github.com/victorcodess"
+            href="https://github.com/dichanshrestha"
             target="_blank"
             aria-label="View GitHub Profile"
           >
@@ -42,11 +44,11 @@ const Hero = () => {
               className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
               variants={bodyAnimation}
             >
-              GH
+              <Github />
             </motion.p>
           </Link>
           <Link
-            href="https://www.linkedin.com/in/victor-williams-chukwudi/"
+            href="https://www.linkedin.com/in/dichanshrestha"
             target="_blank"
             aria-label="View LinkedIn Profile"
           >
@@ -54,11 +56,11 @@ const Hero = () => {
               className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
               variants={bodyAnimation}
             >
-              LN
+              <Linkedin />
             </motion.p>
           </Link>
           <Link
-            href="https://twitter.com/victorwill__"
+            href="https://twitter.com/dichanshrestha"
             target="_blank"
             aria-label="View Twitter Profile"
           >
@@ -66,19 +68,7 @@ const Hero = () => {
               className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
               variants={bodyAnimation}
             >
-              TW
-            </motion.p>
-          </Link>
-          <Link
-            href="https://contra.com/victorwilliams"
-            target="_blank"
-            aria-label="View Contra Profile"
-          >
-            <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
-              variants={bodyAnimation}
-            >
-              CO
+              {FaIcons.FaXTwitter ? <FaIcons.FaXTwitter size={24} /> : "X"}
             </motion.p>
           </Link>
         </div>
@@ -89,7 +79,7 @@ const Hero = () => {
           className={`relative flex flex-col items-center justify-center ${monaSans.className}`}
         >
           <AnimatedWords
-            title="VICTOR WILLIAMS"
+            title="Dichan Shrestha"
             style="inline-block overflow-hidden pt-1 -mr-4 sm:-mr-5 md:-mr-7 lg:-mr-9 -mb-1 sm:-mb-2 md:-mb-3 lg:-mb-4"
           />
           <motion.div
@@ -99,8 +89,8 @@ const Hero = () => {
             <Image
               src={profile}
               priority
-              alt="Victor's headshot"
-              data-blobity-tooltip="Giga Chad"
+              alt="Dichan's headshot"
+              data-blobity-tooltip="Dichan"
               data-blobity-invert="false"
               className=" w-[150px] rounded-[16px] grayscale hover:grayscale-0 md:w-[200px] md:rounded-[32px] lg:w-[245px]"
             />
@@ -118,16 +108,16 @@ const Hero = () => {
           variants={bodyAnimation}
         >
           <p className="z-50 text-center text-[16px] font-medium text-[#e4ded7] md:text-[20px] lg:text-left">
-            Frontend Engineer and Web Designer, prev at{" "}
+            Full Stack Developer, currently at{" "}
             <Link
-              href="https://www.korahq.com/"
+              href="https://www.tyakkai.com"
               target="_blank"
               className="underline underline-offset-2 hover:no-underline"
               aria-label="Kora Website"
             >
-              Kora,
+              Tyakkai,
             </Link>{" "}
-            currently available for work.
+            currently available for freelance.
           </p>
         </motion.div>
 
@@ -136,8 +126,8 @@ const Hero = () => {
           variants={bodyAnimation}
         >
           <p className="text-right text-[16px] font-semibold text-[#e4ded7] md:text-[20px]">
-            Focused on interfaces and experiences, working remotely from Lagos,
-            Nigeria.
+            Focuses on startup projects, landing pages, and fast delivery for
+            founders.
           </p>
         </motion.div>
       </div>

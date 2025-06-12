@@ -77,12 +77,12 @@ const Contact = () => {
 
           <div className="flex gap-10 text-[16px] font-bold text-[#e4ded7]  sm:gap-14 sm:text-[24px] md:gap-10 md:text-[16px] lg:gap-20 lg:text-[28px]">
             <Link
-              href="https://github.com/victorcodess"
+              href="https://github.com/DichanShrestha"
               target="_blank"
               aria-label="View GitHub Profile"
             >
               <AnimatedTitle
-                text={"GH"}
+                text={"Github"}
                 className={
                   "text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"
                 }
