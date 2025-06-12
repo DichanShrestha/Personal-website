@@ -18,7 +18,7 @@ export const devProjects = [
     technologies: ["Next.js", "Express.js", "Docker"],
     github: "https://github.com/victorcodess/synthetix",
     demo: "https://synthetix-iota.vercel.app/",
-    image: require(".//../../public/projects/synthetix-flip.png"),
+    image: require(".//../../public/shiftcare.png"),
     available: true,
   },
   {
@@ -29,7 +29,7 @@ export const devProjects = [
     technologies: ["Next.js", "Tailwind CSS", "Motion"],
     github: "https://github.com/DichanShrestha/Landing-Page",
     demo: "https://landing-page-mu-navy.vercel.app/",
-    image: require(".//../../public/projects/odunsi.png"),
+    image: require(".//../../public/landing.png"),
     available: true,
   },
   {
@@ -40,7 +40,7 @@ export const devProjects = [
     technologies: ["Next.js", "Express.js", "Postgresql"],
     github: "",
     demo: "https://x.com/DichanShrestha/status/1931366009564213625",
-    image: require(".//../../public/projects/interlock.png"),
+    image: require(".//../../public/auth.png"),
     available: true,
   },
 

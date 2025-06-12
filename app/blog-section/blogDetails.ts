@@ -26,28 +26,24 @@ export const blogDetails = [
   //   available: false,
   // },
   {
-    title: "How to create exit animations with Framer Motion",
-    image:
-      "https://cdn.hashnode.com/res/hashnode/image/upload/v1715345723909/c71d9691-fe4c-4302-b1cb-d9dca77a99b5.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
-    date: "MAY 2024",
-    url: "https://blog.victorwilliams.me/how-to-create-exit-animations-with-framer-motion",
+    title: "We're All Doing Caching Wrong: Here's the Right Way",
+    url: "https://my-connecting-dot-for-system-design.hashnode.dev/were-all-doing-caching-wrong-heres-the-right-way",
+    date: "April 2024",
+    image: require(".//../../public/caching.png"),
     available: true,
   },
   {
-    title: "The Importance of Collaboration in Achieving Successful Design",
-    image:
-      "https://github.com/victorcodess/folio-v1/assets/84178696/05656547-3206-42af-b081-83247f9a1063",
+    title: "Performance vs Scalability",
+    url: "https://my-connecting-dot-for-system-design.hashnode.dev/performance-vs-scalability-why-your-fast-system-can-still-fail",
     date: "MAY 2024",
-    url: "https://blog.victorwilliams.me/importance-of-collaboration-in-design",
+    image: require(".//../../public/pvs.png"),
     available: true,
   },
   {
-    title:
-      "Step-by-Step Guide: Adding Google Maps to Your React App Using Vis.gl",
-    image:
-      "https://github.com/victorcodess/folio-v1/assets/84178696/c2693469-e5c6-43ad-a857-693bbbfe7b9a",
+    title: "How Designing Systems Made Me a Better Coder",
+    image: require(".//../../public/system.png"),
     date: "APR 2024",
-    url: "https://blog.victorwilliams.me/how-to-add-google-maps-to-react-app-visgl",
+    url: "https://my-connecting-dot-for-system-design.hashnode.dev/how-designing-systems-made-me-a-better-coder-no-figma-involved",
     available: true,
   },
   // {

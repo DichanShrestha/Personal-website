@@ -36,7 +36,7 @@ const ProjectCard = ({
       <Image
         src={image}
         alt={name}
-        className={`absolute bottom-0 w-[70%] object-contain transition-all duration-500 sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
+        className={`absolute bottom-10 w-[70%] object-contain transition-all duration-500 md:w-[60%] lg:max-w-[55%] ${
           id % 2 === 0 ? "right-0" : "left-0"
         }`}
       />

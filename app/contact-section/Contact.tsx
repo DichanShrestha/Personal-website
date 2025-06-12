@@ -26,11 +26,6 @@ const Contact = () => {
               "flex max-w-[500px] flex-col items-start text-left text-[150px] font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center sm:text-[170px] md:text-[200px] lg:text-center lg:text-[270px] xl:text-[390px]"
             }
           />
-          <Image
-            src={heartIcon}
-            alt="Heart Icon"
-            className="heartbeat md:-bottom-18 absolute -bottom-5 left-64 w-[120px] sm:-bottom-14 sm:left-[40%] md:left-[40%] md:w-[150px] lg:-bottom-16 lg:left-[42%] lg:w-[230px]"
-          />
         </div>
 
         <div className="mt-20 flex w-full flex-col items-end justify-center gap-16 sm:mt-32 sm:gap-12 md:mt-40 md:flex-row md:items-start md:justify-between lg:mt-12 lg:max-w-[1440px]">
@@ -45,7 +40,7 @@ const Contact = () => {
             />
             <div className="bor der mt-5 flex w-[298px] items-center gap-1 md:w-[335px] md:gap-2.5">
               <Link
-                href="mailto:victor.will.chuk@gmail.com?subject=Lets%20work%20together!&amp;body=Hello%2C%20I%20think%20we%20need%20you%20to%20work%20on%2Fcollaborate%20this%20particular%20product...%20Reach%20out%20as%20soon%20as%20you%20can."
+                href="mailto:dichanshrestha10@gmail.com?subject=Let%27s%20work%20together&body=Hello%2C%20I%27d%20like%20to%20discuss%20a%20collaboration%20opportunity%20on%20a%20project.%20Please%20let%20me%20know%20when%20you%27re%20available%20to%20talk."
                 target="_blank"
                 aria-label="Send me an email"
                 className="bor der mt-1 w-[147px] flex-1 underline underline-offset-2 hover:no-underline sm:mt-2 sm:w-[170px] md:mt-3 lg:mt-4"
@@ -62,7 +57,7 @@ const Contact = () => {
                 }
               />
               <Link
-                href="https://cal.com/victorwilliams/30min"
+                href="https://cal.com/dichan-shrestha-zljrlx/30min"
                 target="_blank"
                 aria-label="Send me an email"
                 className="bor der mt-1 w-[110px] flex-1 underline underline-offset-2 hover:no-underline sm:mt-2 sm:w-[147px] md:mt-3 md:-ml-[3px] md:w-[120px] lg:mt-4"
@@ -91,12 +86,12 @@ const Contact = () => {
               />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/victor-williams-chukwudi/"
+              href="https://www.linkedin.com/in/dichanshrestha"
               target="_blank"
               aria-label="View LinkedIn Profile"
             >
               <AnimatedTitle
-                text={"LN"}
+                text={"LinkedIn"}
                 className={
                   "text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"
                 }
@@ -105,12 +100,12 @@ const Contact = () => {
               />
             </Link>
             <Link
-              href="https://twitter.com/victorwill__"
+              href="https://twitter.com/dichanshrestha"
               target="_blank"
               aria-label="View Twitter Profile"
             >
               <AnimatedTitle
-                text={"TW"}
+                text={"X"}
                 className={
                   "text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"
                 }
@@ -118,27 +113,14 @@ const Contact = () => {
                 charSpace={"mr-[0.01em]"}
               />
             </Link>
+
             <Link
-              href="https://www.instagram.com/victorwill__/"
-              target="_blank"
-              aria-label="View Instagram Profile"
-            >
-              <AnimatedTitle
-                text={"IG"}
-                className={
-                  "text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"
-                }
-                wordSpace={"mr-[0.25em]"}
-                charSpace={"mr-[0.01em]"}
-              />
-            </Link>
-            <Link
-              href="https://blog.victorwilliams.me/"
+              href="https://hashnode.com/@dichan"
               target="_blank"
               aria-label="View Hashnode Profile"
             >
               <AnimatedTitle
-                text={"HN"}
+                text={"Hashnode"}
                 className={
                   "text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"
                 }

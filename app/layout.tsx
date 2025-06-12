@@ -1,10 +1,10 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Syne } from "next/font/google";
+import { Syne, Poppins } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 
-const syne = Syne({
+const poppins = Poppins({
   subsets: ["latin"],
   display: "block",
   weight: ["400", "500", "600", "700", "800"],
@@ -88,7 +88,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`${syne.className} scroll-smooth scrollbar-thin scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
+        className={`${poppins.className} scroll-smooth scrollbar-thin scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
       >
         {children}
         <Analytics />
