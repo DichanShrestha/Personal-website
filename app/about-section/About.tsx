@@ -6,7 +6,7 @@ import AnimatedTitle from "../animations/AnimatedTitle";
 const About = () => {
   return (
     <section
-      className="relative z-10 w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 pb-36 md:pt-20 md:pb-44 lg:pt-20 lg:pb-56"
+      className="relative z-10 w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 md:pt-20"
       id="about"
     >
       <div className="mx-auto flex w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
@@ -104,13 +104,13 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10 flex flex-col md:-mt-0 lg:mt-28">
+        {/* <div className="mt-10 flex flex-col md:-mt-0 lg:mt-28">
           <SongCarousel />
           <AnimatedBody
             text="A few songs I can recommend if you're looking for some fresh tunes :)"
             className="absolute bottom-10 right-0 left-0 mx-auto w-[90%] text-center text-[14px] font-semibold uppercase text-[#e4ded7] sm:w-[500px] md:bottom-12 md:w-[550px] md:text-[16px] "
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
