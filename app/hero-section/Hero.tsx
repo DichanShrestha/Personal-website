@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { imageAnimation, bodyAnimation } from "../animations/animations";
 import AnimatedWords from "../animations/AnimatedWords";
 import profile from "../../public/me.jpg";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Twitter } from "lucide-react";
 import * as FaIcons from "react-icons/fa6";
 
 const Hero = () => {
@@ -68,7 +68,7 @@ const Hero = () => {
               className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
               variants={bodyAnimation}
             >
-              {FaIcons.FaXTwitter ? <FaIcons.FaXTwitter size={24} /> : "X"}
+              <Twitter />
             </motion.p>
           </Link>
         </div>
