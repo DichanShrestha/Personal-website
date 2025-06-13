@@ -1,7 +1,7 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Syne, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 
 const poppins = Poppins({
@@ -11,11 +11,11 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Dichan Shrestha — Software Engineer",
+  title: "Dichan Shrestha — Software Developer",
   description:
     "Freelance Full Stack Developer focused on system design, performance, and real-time web solutions.",
   generator: "Next.js",
-  applicationName: "Dichan Shrestha",
+  applicationName: "Dichan Shrestha Portfolio",
   keywords: [
     "freelance",
     "developer",
@@ -37,17 +37,17 @@ export const metadata: Metadata = {
   ],
   colorScheme: "dark",
   openGraph: {
-    title: "VDichan Shrestha — Full Stack Engineer",
+    title: "Dichan Shrestha — Full Stack Developer",
     description:
       "Freelance Full Stack Developer focused on system design, performance, and real-time web solutions.",
-    url: "https://www.victorwilliams.me/",
-    siteName: "www.victorwilliams.me",
+    url: "https://dichanshrestha.com.np",
+    siteName: "Dichan Shrestha — Full Stack Developer",
     images: [
       {
-        url: "https://user-images.githubusercontent.com/84178696/228620835-e3cc5c9b-72fc-4f54-a628-407ef7b650f5.png",
+        url: "https://dichanshrestha.com.np/me.jpg",
         width: 1200,
         height: 630,
-        alt: "Dichan Shrestha — Full Stack Engineer",
+        alt: "Dichan Shrestha — Full Stack Developer",
       },
     ],
     locale: "en-US",
@@ -55,14 +55,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dichan Shrestha — Full Stack Engineer",
+    title: "Dichan Shrestha — Full Stack Developer",
     description:
       "Freelance Full Stack Developer focused on system design, performance, and real-time web solutions.",
-    creator: "victorwill__",
-    creatorId: "1243720976552144897",
-    images: [
-      "https://user-images.githubusercontent.com/84178696/228620835-e3cc5c9b-72fc-4f54-a628-407ef7b650f5.png",
-    ],
+    creator: "@DichanShrestha",
+    creatorId: "1883852449875963904",
+    images: ["https://dichanshrestha.com.np/me.jpg"],
   },
   robots: {
     index: true,
