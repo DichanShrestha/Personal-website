@@ -16,8 +16,8 @@ export const devProjects = [
     description:
       "Currently working on a care scheduling application that allows users to manage their care schedules, appointments, and tasks efficiently.",
     technologies: ["Next.js", "Express.js", "Docker"],
-    github: "https://github.com/victorcodess/synthetix",
-    demo: "https://synthetix-iota.vercel.app/",
+    github: "",
+    demo: "https://us.shiftcare.com/",
     image: require(".//../../public/shiftcare.png"),
     available: true,
   },
