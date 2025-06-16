@@ -1,16 +1,26 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import me from "../public/me.jpg";
 
+// Font setup with variable names for Tailwind
 const poppins = Poppins({
   subsets: ["latin"],
-  display: "block",
+  display: "swap",
   weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
 });
 
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-playfair",
+});
+
+// Metadata
 export const metadata: Metadata = {
   title: "Dichan Shrestha — Software Developer",
   description:
@@ -78,20 +88,20 @@ export const metadata: Metadata = {
   },
   category: "technology",
   icons: {
-    icon: "/favicon-512x512.png",
+    icon: "/favicon-512x512.png", // make sure this file exists in /public
   },
 };
 
+// Props
 type RootLayoutProps = {
   children: ReactNode;
 };
 
+// Layout Component
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
-      <body
-        className={`${poppins.className} scroll-smooth scrollbar-thin scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
-      >
+    <html lang="en" className={`${poppins.variable} ${playfair.variable}`}>
+      <body className="scroll-smooth font-sans scrollbar-thin scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]">
         {children}
         <Analytics />
       </body>

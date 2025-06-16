@@ -112,7 +112,7 @@ const ProjectCard = ({
       >
         <AnimatedTitle
           text={name}
-          className="text-[36px] leading-tight md:text-[44px] lg:text-[48px]"
+          className="font-serif text-[36px] leading-tight md:text-[44px] lg:text-[48px]"
           wordSpace="mr-[0.25em]"
           charSpace="-mr-[0.01em]"
         />
@@ -127,7 +127,7 @@ const ProjectCard = ({
               text={tech}
               wordSpace="mr-[0.25em]"
               charSpace="mr-[0.01em]"
-              className="text-[14px] font-bold uppercase md:text-[16px] lg:text-[18px]"
+              className="font-serif text-[14px] font-bold uppercase md:text-[16px] lg:text-[18px]"
             />
           ))}
         </div>
