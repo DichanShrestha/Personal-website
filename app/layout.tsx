@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import me from "../public/me.jpg";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Dichan Shrestha — Full Stack Developer",
     images: [
       {
-        url: "https://dichanshrestha.com.np/me.jpg",
+        url: me.src,
         width: 1200,
         height: 630,
         alt: "Dichan Shrestha — Full Stack Developer",
@@ -60,7 +61,7 @@ export const metadata: Metadata = {
       "Freelance Full Stack Developer focused on system design, performance, and real-time web solutions.",
     creator: "@DichanShrestha",
     creatorId: "1883852449875963904",
-    images: ["https://dichanshrestha.com.np/me.jpg"],
+    images: [me.src],
   },
   robots: {
     index: true,
@@ -76,6 +77,9 @@ export const metadata: Metadata = {
     },
   },
   category: "technology",
+  icons: {
+    icon: "/favicon-512x512.png",
+  },
 };
 
 type RootLayoutProps = {
