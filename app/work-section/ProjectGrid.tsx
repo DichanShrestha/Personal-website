@@ -13,7 +13,7 @@ const ProjectGrid = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setXValue(["35%", "-35%"]);
+        setXValue(["25%", "-85%"]);
       } else {
         setXValue(["30%", "-55%"]);
       }
@@ -32,14 +32,14 @@ const ProjectGrid = () => {
     <section
       ref={targetRef}
       style={{ width: "calc(100vw - 50px)" }}
-      className="relative h-[500vh]"
+      className="relative h-[250vh] md:h-[500vh]"
     >
       <div className="sticky top-0 flex h-screen items-center justify-center overflow-hidden">
         <motion.div style={{ x }} className="flex w-[250%] gap-8 px-8">
           {devProjects.map((project: ProjectProps) => (
             <div
               key={project.id}
-              className="w-[85vw] flex-shrink-0 md:w-[1000px]"
+              className="w-[80vw] flex-shrink-0 md:w-[1000px]"
             >
               <ProjectCard {...project} />
             </div>

@@ -29,7 +29,7 @@ const ProjectCard = ({
           position: "relative",
         } as React.CSSProperties
       }
-      className="relative z-10 flex h-[550px] w-full items-center justify-center overflow-hidden rounded-3xl bg-center py-0 sm:h-[700px] md:h-[650px] lg:h-[500px]"
+      className="relative z-10 flex h-[550px] w-full items-center justify-center overflow-hidden rounded-3xl bg-center py-0 px-5 sm:h-[700px] md:h-[650px] md:px-0 lg:h-[500px]"
       initial="initial"
       animate="animate"
     >
